@@ -9,6 +9,7 @@ import Feed from "../screens/Feed";
 import Video from "../screens/Video";
 
 import youtubeLogo from "../../assets/youtubeLogo.png";
+import rocketseatLogo from "../../assets/rocketseatLogo.png";
 
 const MainStack = createStackNavigator(
   {
@@ -34,10 +35,7 @@ const MainStack = createStackNavigator(
             </TouchableOpacity>
             <TouchableOpacity>
               <Image
-                source={{
-                  uri:
-                    "https://yt3.ggpht.com/a/AGF-l7_gRI0RdRC_VNg535o0C21ltP0eTFhi4rjRmw=s900-c-k-c0xffffffff-no-rj-mo"
-                }}
+                source={rocketseatLogo}
                 style={{
                   marginRight: 20,
                   width: 26,

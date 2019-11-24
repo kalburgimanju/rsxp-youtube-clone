@@ -9,12 +9,38 @@ import {
   TouchableOpacity
 } from "react-native";
 
-const mock = [
+const videos = [
+  {
+    id: 3,
+    thumbnail_url: "http://i3.ytimg.com/vi/keMIEpZxQNI/maxresdefault.jpg",
+    title: "Podcast FalaDev #03 - Não sei inglês, e agora?",
+    video_uri: "https://cutt.ly/keZSH7W",
+    view_count: "15k",
+    created_at: "3 days ago",
+    user: {
+      title: "Rocketseat",
+      avatar_url:
+        "https://pbs.twimg.com/profile_images/953595371875422210/0pWsfSSp_400x400.jpg"
+    }
+  },
+  {
+    id: 2,
+    thumbnail_url: "http://i3.ytimg.com/vi/SE76RtsU1VE/maxresdefault.jpg",
+    title: "Podcast FalaDev #02 - jQuery morreu? E agora?",
+    video_uri: "https://cutt.ly/leZSHX7",
+    view_count: "15k",
+    created_at: "3 days ago",
+    user: {
+      title: "Rocketseat",
+      avatar_url:
+        "https://pbs.twimg.com/profile_images/953595371875422210/0pWsfSSp_400x400.jpg"
+    }
+  },
   {
     id: 1,
-    thumbnail_url: "http://i3.ytimg.com/vi/SE76RtsU1VE/hqdefault.jpg",
-    title: "Podcast FalaDev #02 - jQuery morreu? E agora?",
-    video_uri: "http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
+    thumbnail_url: "http://i3.ytimg.com/vi/ixbvCw-YiOA/maxresdefault.jpg",
+    title: "Podcast FalaDev #01 - AdonisJS, vale a pena utilizar?",
+    video_uri: "https://cutt.ly/CeZSG5v",
     view_count: "15k",
     created_at: "3 days ago",
     user: {
@@ -62,7 +88,7 @@ export default function Feed({ navigation }) {
     <SafeAreaView style={styles.container}>
       <FlatList
         style={styles.videoList}
-        data={mock}
+        data={videos}
         renderItem={renderVideoCards}
         keyExtractor={video => `video-card-${video.id}`}
       />
