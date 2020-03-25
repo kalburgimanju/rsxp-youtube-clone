@@ -1,6 +1,6 @@
 <h1 align="center">
 <br>
-  <img src="https://carlisletheacarlisletheatre.org/images/youtube-logo-png-transparent-background-9.png" alt="GoBarber" width="90">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/1280px-YouTube_Logo_2017.svg.png" alt="Youtube" width="90">
 <br>
 <br>
 Youtube Clone
